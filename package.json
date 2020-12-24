@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@gvhinks/my-dependency-id-a": "^1.0.0"
+  },
+  "devDependencies": {
+    "tap": "^14.11.0"
   }
 }

@@ -4,4 +4,6 @@ const testValue = {
   text: "abcdefg12345"
 }
 
-console.log(getAlpha(testValue))
+const myFunc = () => getAlpha(testValue)
+
+module.exports = myFunc
