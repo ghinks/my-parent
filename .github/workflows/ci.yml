@@ -8,6 +8,8 @@ jobs:
         os: [ ubuntu-latest ]
         node_version: [ 14.x ]
     name: Node ${{ matrix.node_version }} - on ${{ matrix.os }}
+    env:
+      NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - name: Setup node
@@ -15,8 +17,4 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
       - run: npm ci
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm run test
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
