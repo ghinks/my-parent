@@ -1,5 +1,9 @@
 {
   "name": "@gvhinks/my-parent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghinks/my-parent.git"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
